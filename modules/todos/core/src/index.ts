@@ -1,1 +1,1 @@
-export * from './lib/modules-todos-core';
+export * from './lib/hooks';
