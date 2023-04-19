@@ -18,7 +18,8 @@
       "@todos-board/modules/todos/core": ["modules/todos/core/src/index.ts"],
       "@todos-board/modules/todos/feature-create-todo": [
         "modules/todos/feature-create-todo/src/index.ts"
-      ]
+      ],
+      "@todos-board/modules/todos/shared": ["modules/todos/shared/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
