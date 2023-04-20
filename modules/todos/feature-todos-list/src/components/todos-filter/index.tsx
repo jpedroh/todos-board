@@ -2,6 +2,8 @@ import Checkbox from '@mui/material/Checkbox';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormGroup from '@mui/material/FormGroup';
 import { TodoStatus } from '@todos-board/modules/todos/core';
+import FormControl from '@mui/material/FormControl';
+import FormLabel from '@mui/material/FormLabel';
 
 type Props = {
   statuses: Array<TodoStatus>;
@@ -22,7 +24,9 @@ export function TodosFilter({ statuses, onChange }: Props) {
   }
 
   return (
-    <FormGroup dir="horizontal">
+    <FormControl component="fieldset">
+      <FormLabel component="legend">Filter by status</FormLabel>
+      <FormGroup row>
       <FormControlLabel
         control={
           <Checkbox
@@ -51,5 +55,6 @@ export function TodosFilter({ statuses, onChange }: Props) {
         label="Done"
       />
     </FormGroup>
+    </FormControl>
   );
 }
