@@ -13,8 +13,20 @@
             "allow": ["@mui/**"],
             "depConstraints": [
               {
-                "sourceTag": "*",
-                "onlyDependOnLibsWithTags": ["*"]
+                "sourceTag": "scope:app",
+                "onlyDependOnLibsWithTags": ["type:feature"]
+              },
+              {
+                "sourceTag": "type:feature",
+                "onlyDependOnLibsWithTags": ["type:core", "type:util"]
+              },
+              {
+                "sourceTag": "type:core",
+                "onlyDependOnLibsWithTags": []
+              },
+              {
+                "sourceTag": "type:util",
+                "onlyDependOnLibsWithTags": ["type:util", "type:core"]
               }
             ]
           }

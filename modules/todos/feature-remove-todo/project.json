@@ -3,7 +3,9 @@
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "modules/todos/feature-remove-todo/src",
   "projectType": "library",
-  "tags": [],
+  "tags": [
+    "type:feature"
+  ],
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",

@@ -3,7 +3,9 @@
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "modules/todos/core/src",
   "projectType": "library",
-  "tags": [],
+  "tags": [
+    "type:core"
+  ],
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
