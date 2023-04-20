@@ -14,9 +14,9 @@ export function TodosList() {
   return (
     <section>
       <TodosFilter statuses={statuses} onChange={setStatuses} />
-      {todos.map((todo, key) => {
-        return <TodoItem todo={todo} key={key} />;
-      })}
+      {todos.map((todo) => (
+        <TodoItem todo={todo} key={todo.id} />
+      ))}
     </section>
   );
 }
