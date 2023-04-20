@@ -10,9 +10,10 @@ import { TodosFilter } from '../components/todos-filter';
 type Props = {
   onEdit: (x: Todo) => void;
   onRemove: (x: Todo) => void;
+  onChangeStatus: (x: Todo) => void;
 };
 
-export function TodosList({ onEdit, onRemove }: Props) {
+export function TodosList({ onEdit, onRemove, onChangeStatus }: Props) {
   const [statuses, setStatuses] = useState([
     'PENDING',
     'ONGOING',
@@ -29,6 +30,7 @@ export function TodosList({ onEdit, onRemove }: Props) {
           key={todo.id}
           onEdit={onEdit}
           onRemove={onRemove}
+          onChangeStatus={onChangeStatus}
         />
       ))}
     </section>

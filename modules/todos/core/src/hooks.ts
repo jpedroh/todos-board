@@ -13,3 +13,5 @@ export const useListTodos = (statuses: Array<TodoStatus>) =>
 export const useEditTodo = () => useStore((state) => state.editTodo);
 
 export const useRemoveTodo = () => useStore((state) => state.removeTodo);
+
+export const useChangeTodoStatus = () => useStore((state) => state.changeTodoStatus);

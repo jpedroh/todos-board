@@ -16,6 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@todos-board/modules/todos/core": ["modules/todos/core/src/index.ts"],
+      "@todos-board/modules/todos/feature-change-todo-status": [
+        "modules/todos/feature-change-todo-status/src/index.ts"
+      ],
       "@todos-board/modules/todos/feature-create-todo": [
         "modules/todos/feature-create-todo/src/index.ts"
       ],
