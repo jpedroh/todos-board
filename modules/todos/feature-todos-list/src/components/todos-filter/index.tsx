@@ -27,34 +27,34 @@ export function TodosFilter({ statuses, onChange }: Props) {
     <FormControl component="fieldset">
       <FormLabel component="legend">Filter by status</FormLabel>
       <FormGroup row>
-      <FormControlLabel
-        control={
-          <Checkbox
-            checked={isEnabled('PENDING')}
-            onChange={() => toggleStatus('PENDING')}
-          />
-        }
-        label="Pending"
-      />
-      <FormControlLabel
-        control={
-          <Checkbox
-            checked={isEnabled('ONGOING')}
-            onChange={() => toggleStatus('ONGOING')}
-          />
-        }
-        label="Ongoing"
-      />
-      <FormControlLabel
-        control={
-          <Checkbox
-            checked={isEnabled('DONE')}
-            onChange={() => toggleStatus('DONE')}
-          />
-        }
-        label="Done"
-      />
-    </FormGroup>
+        <FormControlLabel
+          control={
+            <Checkbox
+              checked={isEnabled('PENDING')}
+              onChange={() => toggleStatus('PENDING')}
+            />
+          }
+          label="Pending"
+        />
+        <FormControlLabel
+          control={
+            <Checkbox
+              checked={isEnabled('IN PROGRESS')}
+              onChange={() => toggleStatus('IN PROGRESS')}
+            />
+          }
+          label="In progress"
+        />
+        <FormControlLabel
+          control={
+            <Checkbox
+              checked={isEnabled('DONE')}
+              onChange={() => toggleStatus('DONE')}
+            />
+          }
+          label="Done"
+        />
+      </FormGroup>
     </FormControl>
   );
 }

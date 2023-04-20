@@ -1,3 +1,4 @@
+import Stack from '@mui/material/Stack';
 import {
   Todo,
   TodoStatus,
@@ -14,14 +15,15 @@ type Props = {
 export function TodosList({ availableActions }: Props) {
   const [statuses, setStatuses] = useState([
     'PENDING',
-    'ONGOING',
+    'IN PROGRESS',
     'DONE',
   ] as Array<TodoStatus>);
   const todos = useListTodos(statuses);
 
   return (
-    <section>
+    <Stack spacing={2}>
       <TodosFilter statuses={statuses} onChange={setStatuses} />
+
       {todos.map((todo) => (
         <TodoItem
           todo={todo}
@@ -29,6 +31,6 @@ export function TodosList({ availableActions }: Props) {
           availableActions={availableActions}
         />
       ))}
-    </section>
+    </Stack>
   );
 }

@@ -18,9 +18,7 @@ export function RemoveTodo({ todo }: Props) {
 
   return (
     <>
-      <Button onClick={() => setOpen(true)} variant="outlined">
-        Remove
-      </Button>
+      <Button onClick={() => setOpen(true)}>Remove</Button>
 
       <Dialog open={open} onClose={onClose}>
         <DialogTitle>Remove Todo</DialogTitle>

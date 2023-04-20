@@ -2,13 +2,13 @@ export type Todo = {
   id: TodoId;
   title: string;
   description: string;
-  status: 'PENDING' | 'ONGOING' | 'DONE';
+  status: TodoStatus;
   createdAt: Date;
 };
 
 export type TodoId = number;
 
-export type TodoStatus = 'PENDING' | 'ONGOING' | 'DONE';
+export type TodoStatus = 'PENDING' | 'IN PROGRESS' | 'DONE';
 
 export type CreateTodo = {
   title: string;

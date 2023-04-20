@@ -30,9 +30,7 @@ export function ChangeTodoStatus({ todo }: Props) {
 
   return (
     <>
-      <Button onClick={() => setOpen(true)} variant="outlined">
-        Change status
-      </Button>
+      <Button onClick={() => setOpen(true)}>Change status</Button>
 
       <Dialog open={open} onClose={onClose}>
         <DialogTitle>Change status</DialogTitle>
@@ -50,7 +48,7 @@ export function ChangeTodoStatus({ todo }: Props) {
                 onChange={(evt) => setNewStatus(evt.target.value as TodoStatus)}
               >
                 <MenuItem value={'PENDING'}>PENDING</MenuItem>
-                <MenuItem value={'ONGOING'}>ONGOING</MenuItem>
+                <MenuItem value={'IN PROGRESS'}>IN PROGRESS</MenuItem>
                 <MenuItem value={'DONE'}>DONE</MenuItem>
               </Select>
             </FormControl>

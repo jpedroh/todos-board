@@ -13,9 +13,7 @@ export function EditTodo({ todo }: { todo: Todo }) {
 
   return (
     <>
-      <Button onClick={() => setOpen(true)} variant="outlined">
-        Edit
-      </Button>
+      <Button onClick={() => setOpen(true)}>Edit</Button>
 
       <Dialog open={open} onClose={onClose}>
         <DialogTitle>Edit Todo</DialogTitle>
