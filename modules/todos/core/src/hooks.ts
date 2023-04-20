@@ -5,5 +5,9 @@ export const useCreateTodo = () => useStore((state) => state.createTodo);
 
 export const useListTodos = (statuses: Array<TodoStatus>) =>
   useStore((state) => {
-    return state.todos.filter((todo) => statuses.includes(todo.status));
+    return Array.from(state.todos.values()).filter((todo) => {
+      return statuses.includes(todo.status);
+    });
   });
+
+export const useEditTodo = () => useStore((state) => state.editTodo);

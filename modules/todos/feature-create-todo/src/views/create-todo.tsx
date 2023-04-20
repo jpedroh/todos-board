@@ -21,7 +21,12 @@ export function CreateTodo() {
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>Create a Todo</DialogTitle>
         <DialogContent>
-          <TodoForm onSubmit={createTodo} />
+          <TodoForm
+            onSubmit={(todo) => {
+              createTodo(todo);
+              handleClose();
+            }}
+          />
         </DialogContent>
       </Dialog>
     </>

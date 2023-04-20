@@ -1,10 +1,12 @@
 export type Todo = {
-  id: number;
+  id: TodoId;
   title: string;
   description: string;
   status: 'PENDING' | 'ONGOING' | 'DONE';
   createdAt: Date;
 };
+
+export type TodoId = number;
 
 export type TodoStatus = 'PENDING' | 'ONGOING' | 'DONE';
 

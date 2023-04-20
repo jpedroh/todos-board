@@ -19,6 +19,9 @@
       "@todos-board/modules/todos/feature-create-todo": [
         "modules/todos/feature-create-todo/src/index.ts"
       ],
+      "@todos-board/modules/todos/feature-edit-todo": [
+        "modules/todos/feature-edit-todo/src/index.ts"
+      ],
       "@todos-board/modules/todos/feature-todos-list": [
         "modules/todos/feature-todos-list/src/index.ts"
       ],
