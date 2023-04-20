@@ -6,6 +6,8 @@ export type Todo = {
   createdAt: Date;
 };
 
+export type TodoStatus = 'PENDING' | 'ONGOING' | 'DONE';
+
 export type CreateTodo = {
   title: string;
   description: string;
