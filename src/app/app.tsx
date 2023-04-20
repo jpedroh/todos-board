@@ -1,7 +1,7 @@
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { CreateTodoForm } from '@todos-board/modules/todos/feature-create-todo';
-import { TodosList } from '../../modules/todos/feature-todos-list/src';
+import { CreateTodo } from '@todos-board/modules/todos/feature-create-todo';
+import { TodosList } from '@todos-board/modules/todos/feature-todos-list';
 
 const darkTheme = createTheme({
   palette: {
@@ -13,7 +13,7 @@ export function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
-      <CreateTodoForm />
+      <CreateTodo />
       <TodosList />
     </ThemeProvider>
   );

@@ -6,7 +6,7 @@ import { useCreateTodo } from '@todos-board/modules/todos/core';
 import { TodoForm } from '@todos-board/modules/todos/shared';
 import { useState } from 'react';
 
-export function CreateTodoForm() {
+export function CreateTodo() {
   const createTodo = useCreateTodo();
 
   const [open, setOpen] = useState(false);

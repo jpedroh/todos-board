@@ -1,2 +1,2 @@
-export * from './lib/model';
-export * from './lib/hooks';
+export * from './model';
+export * from './hooks';

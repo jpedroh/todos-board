@@ -1,1 +1,1 @@
-export * from './lib/views/create-todo-form';
+export * from './views/create-todo';
