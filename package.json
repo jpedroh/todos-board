@@ -5,7 +5,8 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "test:e2e": "playwright test"
   },
   "private": true,
   "dependencies": {
@@ -18,13 +19,13 @@
     "zustand": "^4.3.7"
   },
   "devDependencies": {
-    "@nrwl/cypress": "15.9.2",
     "@nrwl/eslint-plugin-nx": "15.9.2",
     "@nrwl/js": "15.9.2",
     "@nrwl/linter": "15.9.2",
     "@nrwl/react": "15.9.2",
     "@nrwl/vite": "15.9.2",
     "@nrwl/workspace": "15.9.2",
+    "@playwright/test": "^1.32.3",
     "@testing-library/react": "14.0.0",
     "@types/node": "18.14.2",
     "@types/react": "18.0.28",
@@ -34,12 +35,11 @@
     "@vitejs/plugin-react": "^3.0.0",
     "@vitest/coverage-c8": "~0.25.8",
     "@vitest/ui": "^0.25.8",
-    "cypress": "^12.2.0",
     "eslint": "~8.15.0",
     "eslint-config-prettier": "8.1.0",
-    "eslint-plugin-cypress": "^2.10.3",
     "eslint-plugin-import": "2.27.5",
     "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-playwright": "^0.12.0",
     "eslint-plugin-react": "7.32.2",
     "eslint-plugin-react-hooks": "4.6.0",
     "jsdom": "~20.0.3",
