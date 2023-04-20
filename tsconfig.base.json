@@ -22,6 +22,9 @@
       "@todos-board/modules/todos/feature-edit-todo": [
         "modules/todos/feature-edit-todo/src/index.ts"
       ],
+      "@todos-board/modules/todos/feature-remove-todo": [
+        "modules/todos/feature-remove-todo/src/index.ts"
+      ],
       "@todos-board/modules/todos/feature-todos-list": [
         "modules/todos/feature-todos-list/src/index.ts"
       ],

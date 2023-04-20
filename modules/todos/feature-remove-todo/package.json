@@ -1,0 +1,12 @@
+{
+  "name": "@todos-board/modules/todos/feature-remove-todo",
+  "version": "0.0.1",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js"
+    }
+  }
+}

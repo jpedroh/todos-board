@@ -8,10 +8,12 @@ export function EditTodo({
   todo,
   onClose,
 }: {
-  todo: Todo;
+  todo?: Todo;
   onClose: () => void;
 }) {
   const editTodo = useEditTodo();
+
+  if (!todo) return <></>;
 
   return (
     <Dialog open={todo != null} onClose={onClose}>

@@ -6,6 +6,7 @@ type State = {
   todos: Todo[];
   createTodo: (todo: CreateTodo) => void;
   editTodo: (id: TodoId, todo: Todo) => void;
+  removeTodo: (id: TodoId) => void;
 };
 
 export const useStore = create<State>()(
@@ -30,6 +31,11 @@ export const useStore = create<State>()(
           const index = state.todos.findIndex((value) => value.id === id);
           newTodos[index] = todo;
           return { todos: newTodos };
+        });
+      },
+      removeTodo: (id) => {
+        return set((state) => {
+          return { todos: state.todos.filter((todo) => todo.id !== id) };
         });
       },
     }),
