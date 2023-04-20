@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@todos-board/modules/shared": ["modules/shared/src/index.ts"],
       "@todos-board/modules/todos/core": ["modules/todos/core/src/index.ts"],
       "@todos-board/modules/todos/feature-change-todo-status": [
         "modules/todos/feature-change-todo-status/src/index.ts"
