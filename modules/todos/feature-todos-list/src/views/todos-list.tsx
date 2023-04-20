@@ -3,17 +3,15 @@ import {
   TodoStatus,
   useListTodos,
 } from '@todos-board/modules/todos/core';
-import { useState } from 'react';
+import { ReactNode, useState } from 'react';
 import { TodoItem } from '../components/todo-item';
 import { TodosFilter } from '../components/todos-filter';
 
 type Props = {
-  onEdit: (x: Todo) => void;
-  onRemove: (x: Todo) => void;
-  onChangeStatus: (x: Todo) => void;
+  availableActions: (todo: Todo) => ReactNode;
 };
 
-export function TodosList({ onEdit, onRemove, onChangeStatus }: Props) {
+export function TodosList({ availableActions }: Props) {
   const [statuses, setStatuses] = useState([
     'PENDING',
     'ONGOING',
@@ -28,9 +26,7 @@ export function TodosList({ onEdit, onRemove, onChangeStatus }: Props) {
         <TodoItem
           todo={todo}
           key={todo.id}
-          onEdit={onEdit}
-          onRemove={onRemove}
-          onChangeStatus={onChangeStatus}
+          availableActions={availableActions}
         />
       ))}
     </section>
