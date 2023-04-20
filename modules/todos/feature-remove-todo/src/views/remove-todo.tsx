@@ -14,7 +14,7 @@ type Props = {
 export function RemoveTodo({ todo, onClose }: Props) {
   const removeTodo = useRemoveTodo();
 
-  if (!todo) return <></>;
+  if (!todo) return;
 
   return (
     <Dialog open={todo != null} onClose={onClose}>

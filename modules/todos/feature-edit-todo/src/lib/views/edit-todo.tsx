@@ -13,7 +13,7 @@ export function EditTodo({
 }) {
   const editTodo = useEditTodo();
 
-  if (!todo) return <></>;
+  if (!todo) return;
 
   return (
     <Dialog open={todo != null} onClose={onClose}>
